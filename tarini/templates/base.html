@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Tarini Pet Clinic</title>
+    <title>{% block title %}{% endblock title %}</title>
+
+    <!-- bootstrap core css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link
+      href="{% static 'css/style.css' %}"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <!-- responsive style -->
+    <link
+      href="{% static 'css/responsive.css' %}"
+      type="text/css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    {% block body%}{% endblock body%}
+    <!-- info section -->
+    <section class="info_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="info_contact">
+              <h5>CONTACT INFO</h5>
+              <div>
+                <img src="images/call.png" alt="" />
+                <p>+91 9465027852</p>
+              </div>
+              <div>
+                <img src="images/mail.png" alt="" />
+                <p>iammgautam@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="info_time">
+              <h5>Opening Hours:</h5>
+              <div>
+                <p>Tuesday to Sunday: 24hrs Open</p>
+              </div>
+              <div>
+                <p>Monday: 12PM - 12AM</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="review_container">
+              <h5>Review Here:</h5>
+              <a
+                href="https://www.google.com/maps/place/Tarini+Vet+Clinic/@26.6257112,92.7978893,17z/data=!3m1!4b1!4m6!3m5!1s0x3744e9a9ff3a9f87:0x8b806fda51b177be!8m2!3d26.6257112!4d92.8004642!16s%2Fg%2F11q9tj8xdl?entry=ttu"
+                target="_blank"
+              >
+                <img
+                  src="{% static 'images/review.png' %}"
+                  alt=""
+                  height="100px"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end info_section -->
+    {% block vue %}{% endblock vue %}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").classList.toggle("menu_width");
+        document
+          .querySelector(".custom_menu-btn")
+          .classList.toggle("menu_btn-style");
+      }
+    </script>
+  </body>
+</html>
