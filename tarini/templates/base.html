@@ -15,7 +15,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Tarini Pet Clinic</title>
+    <title>Tarini Vet Clinic</title>
+    <link rel="shortcut icon" href="{% static 'images/logo.jpeg' %}" />
     <title>{% block title %}{% endblock title %}</title>
 
     <!-- bootstrap core css -->
@@ -47,7 +48,7 @@
   <body>
     {% block body%}{% endblock body%}
     <!-- info section -->
-    <section class="info_section">
+    <section class="info_section" id="contact_us">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-4">
@@ -55,11 +56,11 @@
               <h5>CONTACT INFO</h5>
               <div>
                 <img src="images/call.png" alt="" />
-                <p>+91 9465027852</p>
+                <p>+91 7896929440</p>
               </div>
               <div>
                 <img src="images/mail.png" alt="" />
-                <p>iammgautam@gmail.com</p>
+                <p>vikrams_07@yahoo.co.in</p>
               </div>
             </div>
           </div>
@@ -67,10 +68,17 @@
             <div class="info_time">
               <h5>Opening Hours:</h5>
               <div>
-                <p>Tuesday to Sunday: 24hrs Open</p>
+                <p>Monday:</p>
+                <ul>
+                  <li>Evening Shift: 4PM - 8PM</li>
+                </ul>
               </div>
               <div>
-                <p>Monday: 12PM - 12AM</p>
+                <p>Tuesday to Sunday:</p>
+                <ul>
+                  <li>Morning Shift: 8:30AM - 1PM</li>
+                  <li>Evening Shift: 4PM - 8PM</li>
+                </ul>
               </div>
             </div>
           </div>

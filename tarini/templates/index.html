@@ -23,7 +23,7 @@
             <div class="overlay-content">
               <a href="{% url 'home' %}">Home</a>
               <a href="{% url 'about' %}">About</a>
-              <a href="{% url 'contact' %}">Contact Us</a>
+              <a href="#contact_us">Contact Us</a>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
             </p>
             <div class="btn-box">
               <a href="{% url 'about' %}" class="btn-1"> Read More </a>
-              <a href="{% url 'contact' %}" class="btn-2"> Contact Us </a>
+              <a href="#contact_us" class="btn-2"> Contact Us </a>
             </div>
           </div>
         </div>
@@ -73,10 +73,10 @@
         <h2>About Us</h2>
       </div>
       <p>
-        At Tarini Vet Clinic, our mission is to promote the health and welfare
-        of animals through exceptional veterinary services. We strive to build
-        lasting relationships with both pets and their owners, offering
-        personalized care tailored to your pet's unique needs.
+        At Tarini Vet Clinic, our mission is to help local potential parent
+        adopt pets and to ensure a pet in each household. Our Vision is to
+        provide a basic low cost-effective healthcare and minor surgeries to all
+        the pets with love and care.
       </p>
       <div class="btn-box">
         <a href="{% url 'about' %}#about">
@@ -120,10 +120,10 @@
       </div>
       <div class="box b1">
         <div class="img-box">
-          <img src="{% static 'images/fish.jpg'%}" alt="" />
+          <img src="{% static 'images/cow.png'%}" alt="" />
         </div>
         <div class="detail-box">
-          <h5>Fish</h5>
+          <h5>Cow</h5>
           <p>
             Some species of fish have the remarkable ability to change their
             gender. This phenomenon, known as sequential hermaphroditism
@@ -190,9 +190,9 @@
       <p>
         Our experienced team provides comprehensive veterinary services, from
         preventive care to emergency support, ensuring your furry family members
-        enjoy a healthy and joyful life. With state-of-the-art facilities,
-        personalized attention, and a compassionate approach, Tarini Vet Clinic
-        is the trusted partner you need for your pets' well-being.
+        enjoy a healthy and joyful life. With facilities, personalized
+        attention, and a compassionate approach, Tarini Vet Clinic is the
+        trusted partner you need for your pets' well-being.
       </p>
     </div>
     <div class="us_container">
@@ -240,122 +240,21 @@
 </section>
 <!-- end us section -->
 
-<!-- client section -->
-<section class="client_section layout_padding">
-  <div class="container">
-    <div class="heading_container">
-      <img src="{% static 'images/heading-img.png'%}" alt="" />
-      <h2>Our Doctors</h2>
-    </div>
-    <div id="contactUsCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <div class="box">
-            <div class="img-box">
-              <img src="{% static 'images/client.png'%}" alt="" />
-            </div>
-            <div class="detail-box">
-              <h4>Mithilsh Gautam</h4>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable cIt is a long established fact that a reader
-                will be distracted by the readable c
-              </p>
-              <img src="{% static 'images/quote.png'%}" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item active">
-          <div class="box">
-            <div class="img-box">
-              <img src="{% static 'images/client.png'%}" alt="" />
-            </div>
-            <div class="detail-box">
-              <h4>yoyo Mengo</h4>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable cIt is a long established fact that a reader
-                will be distracted by the readable c
-              </p>
-              <img src="{% static 'images/quote.png' %}" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="box">
-            <div class="img-box">
-              <img src="{% static 'images/client.png' %}" alt="" />
-            </div>
-            <div class="detail-box">
-              <h4>Jack Mengo</h4>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable cIt is a long established fact that a reader
-                will be distracted by the readable c
-              </p>
-              <img src="{% static 'images/quote.png' %}" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel_btn-box">
-        <button
-          class="carousel-control-prev"
-          data-bs-target="#contactUsCarousel"
-          data-bs-slide="prev"
-        ></button>
-        <button
-          class="carousel-control-next"
-          data-bs-target="#contactUsCarousel"
-          data-bs-slide="next"
-        ></button>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- end client section -->
-
 <!-- contact section -->
 <section class="contact_section layout_padding-top">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-5 offset-md-1">
         <div id="content" class="form_container">
+          <div>
+            <div class="img1-box">
+              <img src="{% static 'images/last-pics.png'%}" alt="" />
+            </div>
+          </div>
           <div class="heading_container">
-            <img src="images/heading-img.png" alt="" />
-            <h2>Request A Call Back</h2>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the
-            </p>
-          </div>
-          <div>
-            <input v-model="full_name" type="text" placeholder="Full Name " />
-          </div>
-          <div>
-            <input
-              v-model="phone_number"
-              type="text"
-              placeholder="Phone number"
-            />
-          </div>
-          <div>
-            <input
-              v-model="pet_breed"
-              type="text"
-              placeholder="Your Pet's Breed "
-            />
-          </div>
-          <div>
-            <input
-              v-model="message"
-              type="text"
-              class="message-box"
-              placeholder="Reason For Check Up"
-            />
-          </div>
-          <div class="d-flex">
-            <button @click="send_sms">SEND</button>
+            <img src="{% static 'images/heading-img.jpeg'%}" alt="" />
+            <h2>Thank you for Visting Us</h2>
+            <p>We will be waiting for you until next time.</p>
           </div>
         </div>
       </div>
@@ -377,7 +276,7 @@
   </div>
 </section>
 <!-- end contact section -->
-{% endblock body %} 
+{% endblock body %}
 <!--prettier ignore-->
 
 {% block vue %}
@@ -406,7 +305,7 @@
         $.ajax({
           type: "GET",
           data: data,
-          url: {% url 'sms_sent' %},
+          url: {% url 'about' %},
           success: function (response) {
             console.log(response);
           },
